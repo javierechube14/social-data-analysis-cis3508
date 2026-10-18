@@ -1,12 +1,39 @@
-# La Reconfiguración del Vínculo Afectivo en España
+# Spanish Affective Dynamics & Digital Dating Analysis
 
-Este repositorio contiene un proyecto de ciencia de datos aplicado al análisis sociológico de las relaciones de pareja, la mercantilización del afecto y el impacto de las tecnologías digitales de citas en la España contemporánea, utilizando los microdatos oficiales del **Estudio 3508 del Centro de Investigaciones Sociológicas (CIS)**.
+Quantitative research project analyzing romantic beliefs, consumption patterns, and dating app adoption in Spain using official microdata from the **CIS Survey 3508** (*Centro de Investigaciones Sociológicas*).
 
-## 🛠️ Metodología
-1. **Tratamiento estricto de valores nulos:** Exclusión sistemática de códigos de control del CIS (No Sabe/No Contesta/No Procede) que representaban el 14.02% de la muestra.
-2. **Construcción de Índices Sintéticos (Escala 0-100):**
-   - **Mitos del Amor Romántico:** Adhesión a postulados como la omnipotencia del amor.
-   - **Consumo Romántico:** Importancia de cenas románticas, viajes en pareja y regalos.
-   - **Amor Digital / Aceptación de Apps:** Nivel de apertura y confianza hacia las aplicaciones de citas.
-3. **Clustering (K-Means):** Clasificación no supervisada validada mediante método del codo y análisis de silueta.
-4. **Inferencia Sociodemográfica:** Modelado por Mínimos Cuadrados Ponderados (WLS).
+## 📌 Project Overview
+This study explores how traditional romantic ideals interact with commercialized dating rituals and digital dating platforms across different demographics in Spain. Using **Python**, the project applies data cleaning protocols, synthetic index construction, and unsupervised **K-Means clustering** to identify latent behavioral profiles.
+
+## 🛠️ Tech Stack & Methods
+- **Language & Tools:** Python (Pandas, NumPy, SciPy, Scikit-Learn, Statsmodels, Seaborn).
+- **Data Source:** CIS Survey 3508 (`3508.sav` SPSS microdata).
+- **Data Pipeline:**
+  1. Strict handling of survey non-responses and structural filter values (NS/NC/NAP).
+  2. Construction of 0–100 synthetic indices: *Romantic Myths*, *Romantic Consumption*, and *Digital Dating Acceptance*.
+  3. Sample weighting (*PESO*) adjustment for population representativeness.
+  4. Unsupervised segmentation via **K-Means Clustering** (evaluated through Elbow Method & Silhouette Analysis).
+  5. Weighted Least Squares (**WLS**) regression modeling.
+
+## 📊 Key Findings & Latent Clusters
+- **Cluster 0 ("Detached Pragmatists" - 25.9%):** Low adherence to traditional romantic myths, moderate consumption, and lower app acceptance. Predominantly older demographic.
+- **Cluster 1 ("Analog Traditionalists" - 36.6%):** High romantic idealization and consumption rituals, but complete disconnect/rejection of digital dating apps.
+- **Cluster 2 ("Digital Romantics" - 37.5%):** Highest representation of Gen Z and Millennials. Successfully integrates dating app usage with high valuation of romantic rituals and traditional myths.
+
+## 📁 Repository Structure
+├── README.md                           # Project overview (English)
+├── requirements.txt                    # Python dependencies
+├── El_amor_en_la_Espana_digital.pdf    # Full research report (Spanish)
+├── CIS_3508_Analisis_Amor.ipynb        # Jupyter Notebook with full replication code
+├── docs/                               # Methodological documentation
+└── output_plots/                       # High-resolution visualizations & cluster CSVs
+## 🚀 How to Run
+1. Clone this repository:
+   ```bash
+   git clone [https://github.com/javierechube14/social-data-analysis-cis3508.git](https://github.com/javierechube14/social-data-analysis-cis3508.git)
+Install dependencies:
+Bash
+pip install -r requirements.txt
+Run CIS_3508_Analisis_Amor.ipynb in Google Colab or Jupyter Lab.
+
+Author: Javier Echube Bestue | Sociology Student & Aspiring Social Data Analyst
