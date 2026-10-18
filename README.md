@@ -21,19 +21,25 @@ This study explores how traditional romantic ideals interact with commercialized
 - **Cluster 2 ("Digital Romantics" - 37.5%):** Highest representation of Gen Z and Millennials. Successfully integrates dating app usage with high valuation of romantic rituals and traditional myths.
 
 ## 📁 Repository Structure
-├── README.md                           # Project overview (English)
-├── requirements.txt                    # Python dependencies
-├── El_amor_en_la_Espana_digital.pdf    # Full research report (Spanish)
-├── CIS_3508_Analisis_Amor.ipynb        # Jupyter Notebook with full replication code
-├── docs/                               # Methodological documentation
-└── output_plots/                       # High-resolution visualizations & cluster CSVs
+├── docs/                                               # Methodological documentation & full report
+│   ├── metodologia_recodificacion.md
+│   └── El_amor_en_la_Espana_digital.pdf                # Full research report (Spanish)
+├── output_plots/                                       # Visualizations & cluster CSVs
+│   ├── resumen_clusters_ponderado.csv
+│   ├── grafico_perfiles_clusters.png
+│   └── grafico_inferencial_mitos.png
+├── CIS_3508_Analisis_Amor_Multidimensional (1).ipynb   # Jupyter Notebook with full code
+├── README.md                                           # Project overview (English)
+└── requirements.txt                                    # Python dependencies
+
 ## 🚀 How to Run
 1. Clone this repository:
    ```bash
    git clone [https://github.com/javierechube14/social-data-analysis-cis3508.git](https://github.com/javierechube14/social-data-analysis-cis3508.git)
-Install dependencies:
+   Install dependencies:
+
 Bash
 pip install -r requirements.txt
-Run CIS_3508_Analisis_Amor.ipynb in Google Colab or Jupyter Lab.
+Run CIS_3508_Analisis_Amor_Multidimensional (1).ipynb in Google Colab or Jupyter Lab.
 
 Author: Javier Echube Bestue | Sociology Student & Aspiring Social Data Analyst
